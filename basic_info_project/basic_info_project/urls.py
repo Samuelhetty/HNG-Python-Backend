@@ -14,13 +14,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.shortcuts import redirect
-from django.urls import path, include
 
+from django.contrib import admin
+from django.urls import path
+from basic_info_app.views import get_info  # Import your API view
 
 urlpatterns = [
-    path('', lambda request: redirect('/api/basic_info_app/')),  # Redirect root URL to /api/basic_info_app/
-    path('admin/', admin.site.urls),
-    path('api/basic_info_app/', include('basic_info_app.urls')),
+    path('admin/', admin.site.urls),  # Keep admin route
+    path('', get_info, name='get_info'),  # Handle requests at the base URL
 ]
+
