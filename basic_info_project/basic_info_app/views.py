@@ -17,7 +17,7 @@ def get_info(request):
 
     data = {
         "email": email_address,
-        "datetime": current_datetime,
+        "current_datetime": current_datetime,
         "github_url": github_url
     }
     return JsonResponse(data)
