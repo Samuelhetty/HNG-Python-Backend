@@ -9,7 +9,7 @@ def get_info(request):
     Returns informations in JSON format
     """
 
-    email_address = os.environ.get('EMAIL_ADDRESS', "example@gmail.com")
+    email_address = os.environ.get('EMAIL_ADDRESS', "hetty8004@gmail.com")
 
     github_url = "https://github.com/samuelhetty"
 
