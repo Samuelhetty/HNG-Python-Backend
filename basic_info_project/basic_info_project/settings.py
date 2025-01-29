@@ -18,8 +18,6 @@ load_dotenv()  # Load variables from .env
 
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -34,7 +32,7 @@ SECRET_KEY = 'django-insecure-#4g752ul^$5h&6(9or8fq1t)4$#y3hq$5bl^^l-c^@7^vqee+=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 
 
 # Application definition
