@@ -31,7 +31,7 @@ pip install -r requirements.txt
 # **API Documentation **
 
 ## Base URL
-The base URL for all API requests is:
+The base URL for all API requests is: https://hng-python-backend.onrender.com
 
 ### GET `/api/basic_info_app/`
 

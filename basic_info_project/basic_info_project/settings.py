@@ -18,6 +18,8 @@ load_dotenv()  # Load variables from .env
 
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
