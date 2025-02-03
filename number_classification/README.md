@@ -41,7 +41,7 @@ pip install -r requirements.txt
 # **API Documentation **
 
 ## Base URL
-The base URL for all API requests is: https://hng-python-backend.onrender.com
+The base URL for all API requests is: https://number-classification-7q0m.onrender.com
 
 ### GET `/api/classify-number/?number=`
 
